@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ full_name }} - Media Kit</title>
+    <link rel="stylesheet" href="media_kit.css">
+</head>
+<body>
+    <div class="page">
+        <!-- Header Section -->
+        <div class="header-section">
+            <div class="profile-container">
+                {% if avatar_url %}
+                <img src="{{ avatar_url }}" class="profile-avatar" alt="{{ full_name }}" />
+                {% else %}
+                <div class="profile-avatar profile-avatar-placeholder">
+                    <span>{{ full_name[0] if full_name else username[0] }}</span>
+                </div>
+                {% endif %}
+                <div class="profile-info">
+                    <h1>{{ full_name or username }}</h1>
+                    <h2>@{{ handle }}</h2>
+                    <p class="platform-badge">{{ platform.title() }}</p>
+                </div>
+            </div>
+            <div class="follower-count">
+                <span class="count">{{ followers | format_number }}</span>
+                <span class="label">Followers</span>
+            </div>
+        </div>
+
+        <!-- Engagement Metrics -->
+        <div class="metrics-section">
+            <div class="metric-card primary">
+                <span class="metric-value">{{ engagement_rate }}%</span>
+                <span class="metric-label">Engagement Rate</span>
+            </div>
+            <div class="metric-card">
+                <span class="metric-value">{{ avg_likes | format_number }}</span>
+                <span class="metric-label">Avg Likes</span>
+            </div>
+            <div class="metric-card">
+                <span class="metric-value">{{ avg_comments | format_number }}</span>
+                <span class="metric-label">Avg Comments</span>
+            </div>
+            <div class="metric-card">
+                <span class="metric-value">{{ engagement_quality.title() }}</span>
+                <span class="metric-label">Quality Score</span>
+            </div>
+        </div>
+
+        <!-- Bio Section -->
+        <div class="bio-section">
+            <h3>About</h3>
+            <p class="bio-text">{{ bio }}</p>
+            
+            {% if insights %}
+            <div class="insights">
+                <h4>Key Insights</h4>
+                <ul>
+                {% for insight in insights[:3] %}
+                    <li>{{ insight }}</li>
+                {% endfor %}
+                </ul>
+            </div>
+            {% endif %}
+        </div>
+
+        <!-- Top Posts Grid -->
+        {% if top_posts %}
+        <div class="posts-section">
+            <h3>Top Performing Content</h3>
+            <div class="posts-grid">
+            {% for post in top_posts[:6] %}
+                <div class="post-card">
+                    {% if post.image_url %}
+                    <img src="{{ post.image_url }}" class="post-image" alt="Post content" />
+                    {% else %}
+                    <div class="post-placeholder">
+                        <span class="platform-icon">
+                            {% if platform == 'instagram' %}📷
+                            {% elif platform == 'tiktok' %}🎵
+                            {% elif platform == 'youtube' %}📺
+                            {% else %}📱{% endif %}
+                        </span>
+                    </div>
+                    {% endif %}
+                    <div class="post-stats">
+                        <span class="likes">❤️ {{ post.likes | format_number }}</span>
+                        <span class="comments">💬 {{ post.comments | format_number }}</span>
+                    </div>
+                    {% if post.caption %}
+                    <div class="post-caption">
+                        <p>{{ post.caption[:100] }}{% if post.caption|length > 100 %}...{% endif %}</p>
+                    </div>
+                    {% endif %}
+                </div>
+            {% endfor %}
+            </div>
+        </div>
+        {% endif %}
+
+        <!-- Contact & Footer -->
+        <div class="footer-section">
+            <div class="contact-info">
+                <span class="contact-label">Contact:</span>
+                <span class="contact-email">{{ contact_email }}</span>
+            </div>
+            <div class="branding">
+                <span class="powered-by">Powered by Windsurf</span>
+                <span class="generated-date">Generated {{ generated_at | format_date }}</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

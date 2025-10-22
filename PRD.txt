@@ -1,0 +1,96 @@
+
+Problem Statement
+
+Influencers lack professional, data-backed media kits and clear engagement insights, hurting their ability to pitch and improve performance.
+Brands struggle to evaluate smaller creators quickly due to inconsistent metrics and inflated engagement.
+
+Target Users
+
+Micro and mid-tier influencers (1K–500K followers) on Instagram, TikTok, YouTube seeking brand deals.
+Creator managers/agents handling multiple creators who need fast, standardized kits and engagement diagnostics.
+
+User Personas
+
+[Creator] Aisha, 24, 18K IG followers
+Needs quick, credible media kit and guidance to improve engagement; low tech, time-constrained, cost-sensitive.
+
+[Manager] Leo, 31, manages 8 creators
+Needs consistent kits, authenticity checks, and easy sharing with brands; values speed and comparability.
+Core Features (Must-Have)
+
+1. Social Account Connect: OAuth connect to IG, TikTok, YouTube; pull basic profile and engagement data.
+2. AI Media Kit Generator: Auto-generate 1–2 page media kit with key stats, audience, best posts, and short bio.
+3. Engagement Analyzer: Metrics and insights: ER, growth, audience authenticity proxy, best time to post.
+4. Brand Readiness Score: Composite scoring with clear actions to improve.
+5. Export & Share: Branded PDF export and shareable live link with view tracking.
+6. Onboarding & Basics: Email sign-up, profile setup, simple pricing (free + monthly), Stripe checkout.
+
+Non-Goals (MVP)
+
+1. Advanced CRM for brands or campaign management.
+2. Multi-language localization.
+3. Deep comment sentiment analysis or fraud forensics.
+4. Custom design editor beyond simple theme switch (light/dark + accent).
+
+High-Level User Flows
+
+1. Onboarding: Sign up → verify email → connect social(s) → generate first kit → view dashboard.
+2. Generate Media Kit: Review pulled data → edit bio/niche → select best posts → generate → export/share.
+3. Analyze Engagement: Open analytics → view ER, trends, authenticity, posting times → get improvement tips.
+4. Payment: Hit paywall feature → choose plan → Stripe checkout → upgrade → unlock exports and link.
+
+Acceptance Criteria (Per Feature)
+
+1. Social Account Connect
+User can OAuth connect at least 1 of IG, TikTok, YouTube.
+System ingests: followers/subscribers, last 30 posts, likes/comments/views (where available).
+Error states shown for failed auth; retry available.
+
+2. AI Media Kit Generator
+Generates a 1–2 page kit with name/handle, follower counts, ER, audience geo/age (if available), 3–6 top posts, short bio.
+Allows editing bio and niche; persists changes.
+Generates in <10 seconds with success rate ≥95%.
+
+3. Engagement Analyzer
+Displays ER (30/90 day), post frequency, growth trend, top content, posting time recommendations.
+Shows basic authenticity proxy (e.g., likes-to-followers ratio, rapid spike flags).
+Actionable tips list with at least 3 recommendations.
+
+4. Brand Readiness Score
+Score 0–100 computed from profile completeness, ER benchmarks, growth, posting consistency, authenticity proxy.
+Shows factor breakdown with weights; each factor links to an improvement tip.
+
+5. Export & Share
+Export PDF ≤2MB that matches on-screen content.
+Shareable link (unique URL) accessible without login; captures view count.
+User can revoke link; link then returns a “no longer available” page.
+
+6. Onboarding & Payments
+Email sign-up with verification; password reset works.
+Free plan includes connect + on-screen kit preview; paid unlocks PDF + share link.
+Stripe checkout succeeds and updates account status instantly.
+
+Baseline Timeline (4 Weeks)
+
+Week 1: Foundations
+Auth, user model, basic dashboard scaffold.
+OAuth integrations scaffolding; data ingestion pipeline (mock + 1 live).
+Media kit template v1 (static).
+
+Week 2: Data + Generator
+Live data pull (first network), storage and normalization.
+AI kit assembly from data; editable bio/niche; theme options.
+Basic ER and top posts logic.
+
+Week 3: Analytics + Scoring + Export
+Engagement Analyzer v1 (ER, frequency, growth, timing suggestions).
+Readiness Score v1 with factor breakdown and tips.
+PDF export and shareable link; link view tracking.
+
+Week 4: Payments + Polish
+Stripe checkout, paywall gating, plan entitlements.
+Error handling, performance, basic telemetry.
+QA, analytics instrumentation, launch checklist.
+
+Summary
+Delivered a concise MVP PRD with problem, users, personas, must-have features, non-goals, flows, acceptance criteria, and a 4-week plan.
