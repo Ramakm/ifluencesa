@@ -9,12 +9,12 @@ export default function PremiumFooter() {
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-12 gap-16">
             <div className="lg:col-span-6">
-              <div className="flex items-center space-x-3 mb-8">
+              <Link href="/" className="flex items-center space-x-3 mb-8 hover:opacity-80 transition-opacity">
                 <div className="w-10 h-10 gradient-bg rounded-xl flex items-center justify-center">
                   <span className="text-white font-bold text-xl">I</span>
                 </div>
                 <span className="font-display text-3xl font-light tracking-wide">Ifluencesa</span>
-              </div>
+              </Link>
               <p className="text-lg text-muted-foreground leading-relaxed font-light max-w-md mb-8">
                 Transform your social influence into professional media kits with precision, 
                 innovation and expertise that stands the test of time.

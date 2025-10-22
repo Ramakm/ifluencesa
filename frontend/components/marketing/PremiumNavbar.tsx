@@ -21,21 +21,21 @@ export default function PremiumNavbar() {
     }`}>
       <div className="container mx-auto px-6 py-6">
         <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-3">
+          <Link href="/" className="flex items-center space-x-3 hover:opacity-80 transition-opacity">
             <div className="w-8 h-8 gradient-bg rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-sm">I</span>
             </div>
             <span className="font-display text-2xl font-light tracking-wide">Ifluencesa</span>
-          </div>
+          </Link>
           
           <nav className="hidden md:flex items-center space-x-12">
-            <Link href="#services" className="text-foreground/70 hover:text-foreground font-light transition-colors">
+            <Link href="/services" className="text-foreground/70 hover:text-foreground font-light transition-colors">
               Services
             </Link>
-            <Link href="#projects" className="text-foreground/70 hover:text-foreground font-light transition-colors">
+            <Link href="/projects" className="text-foreground/70 hover:text-foreground font-light transition-colors">
               Projects
             </Link>
-            <Link href="#about" className="text-foreground/70 hover:text-foreground font-light transition-colors">
+            <Link href="/about" className="text-foreground/70 hover:text-foreground font-light transition-colors">
               About
             </Link>
             <Link href="/login" className="text-foreground/70 hover:text-foreground font-light transition-colors">
