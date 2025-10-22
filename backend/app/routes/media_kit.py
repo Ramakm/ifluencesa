@@ -92,7 +92,7 @@ async def create_media_kit(
         
         # Generate response
         username = profile.get("username") or request.handle
-        base_url = "https://windsurf.app"  # TODO: Get from config
+        base_url = "https://Ifluencesa.app"  # TODO: Get from config
         
         response = MediaKitResponse(
             id=media_kit["id"],

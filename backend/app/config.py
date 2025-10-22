@@ -4,7 +4,7 @@ import os
 
 class Settings(BaseSettings):
     # App Configuration
-    app_name: str = "Windsurf API"
+    app_name: str = "Ifluencesa API"
     version: str = "1.0.0"
     debug: bool = False
     
@@ -20,8 +20,8 @@ class Settings(BaseSettings):
     # CORS Configuration
     cors_origins: List[str] = [
         "http://localhost:3000",
-        "https://windsurf.vercel.app",
-        "https://windsurf.app"
+        "https://Ifluencesa.vercel.app",
+        "https://Ifluencesa.app"
     ]
     
     # OpenAI Configuration (Optional)
@@ -54,8 +54,8 @@ settings = Settings()
 if os.getenv("ENVIRONMENT") == "production":
     settings.debug = False
     settings.cors_origins = [
-        "https://windsurf.vercel.app",
-        "https://windsurf.app"
+        "https://Ifluencesa.vercel.app",
+        "https://Ifluencesa.app"
     ]
 elif os.getenv("ENVIRONMENT") == "development":
     settings.debug = True

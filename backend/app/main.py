@@ -30,7 +30,7 @@ logger = logging.getLogger(__name__)
 async def lifespan(app: FastAPI):
     """Application lifespan events"""
     # Startup
-    logger.info("Starting Windsurf API...")
+    logger.info("Starting Ifluencesa API...")
     
     # Test database connection
     try:
@@ -45,13 +45,13 @@ async def lifespan(app: FastAPI):
     yield
     
     # Shutdown
-    logger.info("Shutting down Windsurf API...")
+    logger.info("Shutting down Ifluencesa API...")
 
 # Create FastAPI application
 app = FastAPI(
     title=settings.app_name,
     version=settings.version,
-    description="API for Windsurf - Influencer Media Kit Generator with Engagement Analytics",
+    description="API for Ifluencesa - Influencer Media Kit Generator with Engagement Analytics",
     docs_url="/docs" if settings.debug else None,
     redoc_url="/redoc" if settings.debug else None,
     lifespan=lifespan
@@ -70,7 +70,7 @@ app.add_middleware(
 if not settings.debug:
     app.add_middleware(
         TrustedHostMiddleware,
-        allowed_hosts=["windsurf-api.render.com", "api.windsurf.app", "localhost"]
+        allowed_hosts=["Ifluencesa-api.render.com", "api.Ifluencesa.app", "localhost"]
     )
 
 # Global exception handler
@@ -121,7 +121,7 @@ async def root():
     return {
         "name": settings.app_name,
         "version": settings.version,
-        "description": "Windsurf API - Transform your social influence into professional media kits",
+        "description": "Ifluencesa API - Transform your social influence into professional media kits",
         "docs_url": "/docs" if settings.debug else None,
         "timestamp": datetime.utcnow().isoformat()
     }

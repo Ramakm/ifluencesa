@@ -1,8 +1,8 @@
-# Windsurf Backend API Design
+# Ifluencesa Backend API Design
 
 ## Base URL
 - **Development**: `http://localhost:8000`
-- **Production**: `https://windsurf-api.render.com` (or Railway)
+- **Production**: `https://Ifluencesa-api.render.com` (or Railway)
 
 ## Authentication
 - **Method**: Supabase JWT tokens
@@ -151,8 +151,8 @@ Content-Type: application/json
 {
   "id": "uuid",
   "username": "johndoe",
-  "public_url": "https://windsurf.app/media-kit/johndoe",
-  "pdf_url": "https://windsurf-api.render.com/api/v1/media-kit/uuid/pdf",
+  "public_url": "https://Ifluencesa.app/media-kit/johndoe",
+  "pdf_url": "https://Ifluencesa-api.render.com/api/v1/media-kit/uuid/pdf",
   "created_at": "2024-01-15T10:30:00Z",
   "view_count": 0
 }

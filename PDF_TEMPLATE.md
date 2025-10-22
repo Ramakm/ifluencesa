@@ -1,4 +1,4 @@
-# Windsurf Media Kit PDF Template Design
+# Ifluencesa Media Kit PDF Template Design
 
 ## Template Structure
 
@@ -106,7 +106,7 @@
         <span class="contact-email">{{ contact_email or "Available upon request" }}</span>
     </div>
     <div class="branding">
-        <span class="powered-by">Powered by Windsurf</span>
+        <span class="powered-by">Powered by Ifluencesa</span>
         <span class="generated-date">Generated {{ generated_at | format_date }}</span>
     </div>
 </div>

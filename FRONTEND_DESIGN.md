@@ -1,4 +1,4 @@
-# Windsurf Frontend Design Plan
+# Ifluencesa Frontend Design Plan
 
 ## Page Layouts & Components
 
@@ -68,7 +68,7 @@ Components:
 - Top posts grid
 - Bio/description
 - Contact CTA
-- "Powered by Windsurf" footer
+- "Powered by Ifluencesa" footer
 
 Components:
 - MediaKitLayout.tsx

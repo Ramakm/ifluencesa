@@ -2,7 +2,7 @@
 
 **Transform your social influence into professional media kits with engagement analytics and PDF generation.**
 
-Windsurf is a comprehensive SaaS platform that helps content creators analyze their engagement metrics and generate professional media kits to attract brand partnerships.
+Ifluencesa is a comprehensive SaaS platform that helps content creators analyze their engagement metrics and generate professional media kits to attract brand partnerships.
 
 ## Features
 
@@ -46,8 +46,8 @@ Windsurf is a comprehensive SaaS platform that helps content creators analyze th
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/windsurf.git
-cd windsurf
+git clone https://github.com/yourusername/Ifluencesa.git
+cd Ifluencesa
 ```
 
 ### 2. Setup Database (Supabase)
@@ -127,7 +127,7 @@ Visit:
 ## Project Structure
 
 ```
-windsurf/
+Ifluencesa/
 ├── frontend/                 # Next.js 14 App
 │   ├── app/                 # App Router pages
 │   ├── components/          # React components
@@ -239,7 +239,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - **Documentation**: Check the `/docs` folder
 - **Issues**: Open a GitHub issue
-- **Email**: support@windsurf.app
+- **Email**: support@Ifluencesa.app
 
 ## 🎉 Acknowledgments
 

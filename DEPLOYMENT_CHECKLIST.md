@@ -1,6 +1,6 @@
-# Windsurf Deployment Checklist
+# Ifluencesa Deployment Checklist
 
-Use this checklist to ensure a smooth deployment of your Windsurf application.
+Use this checklist to ensure a smooth deployment of your Ifluencesa application.
 
 ## 🔧 Pre-Deployment Setup
 
@@ -71,7 +71,7 @@ Use this checklist to ensure a smooth deployment of your Windsurf application.
    - [ ] Select `backend` as root directory
 
 2. **Configure Service**
-   - [ ] Name: `windsurf-api`
+   - [ ] Name: `Ifluencesa-api`
    - [ ] Environment: Python 3
    - [ ] Build Command: `pip install -r requirements.txt`
    - [ ] Start Command: `uvicorn app.main:app --host 0.0.0.0 --port $PORT`
@@ -238,4 +238,4 @@ Final checks before going live:
 - [ ] Backup and recovery tested
 - [ ] Support processes in place
 
-**Congratulations! Your Windsurf application is ready for production! 🚀**
+**Congratulations! Your Ifluencesa application is ready for production! 🚀**

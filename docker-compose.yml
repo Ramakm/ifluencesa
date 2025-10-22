@@ -81,4 +81,4 @@ volumes:
 
 networks:
   default:
-    name: windsurf-network
+    name: Ifluencesa-network

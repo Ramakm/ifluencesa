@@ -56,7 +56,7 @@ export default function SignupPage() {
               <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
                 <CheckCircle className="h-8 w-8 text-green-600" />
               </div>
-              <h2 className="text-xl font-semibold mb-2">Welcome to Windsurf!</h2>
+              <h2 className="text-xl font-semibold mb-2">Welcome to Ifluencesa!</h2>
               <p className="text-muted-foreground mb-4">
                 Your account has been created successfully. You'll be redirected to your dashboard shortly.
               </p>
@@ -83,7 +83,7 @@ export default function SignupPage() {
             <div className="w-8 h-8 gradient-bg rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-lg">W</span>
             </div>
-            <span className="text-xl font-bold gradient-text">Windsurf</span>
+            <span className="text-xl font-bold gradient-text">Ifluencesa</span>
           </div>
           <h1 className="text-2xl font-bold">Create your account</h1>
           <p className="text-muted-foreground">Start building professional media kits today</p>

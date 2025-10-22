@@ -46,7 +46,7 @@ export default function LoginPage() {
             <div className="w-8 h-8 gradient-bg rounded-lg flex items-center justify-center">
               <span className="text-white font-bold text-lg">W</span>
             </div>
-            <span className="text-xl font-bold gradient-text">Windsurf</span>
+            <span className="text-xl font-bold gradient-text">Ifluencesa</span>
           </div>
           <h1 className="text-2xl font-bold">Welcome back</h1>
           <p className="text-muted-foreground">Sign in to your account to continue</p>

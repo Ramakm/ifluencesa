@@ -1,4 +1,4 @@
-# Windsurf MVP Deployment Plan
+# Ifluencesa MVP Deployment Plan
 
 ## Deployment Architecture
 
@@ -54,7 +54,7 @@ NEXT_PUBLIC_SUPABASE_URL=https://your-project.supabase.co
 NEXT_PUBLIC_SUPABASE_ANON_KEY=your-anon-key
 
 # Backend API
-NEXT_PUBLIC_API_URL=https://windsurf-api.render.com
+NEXT_PUBLIC_API_URL=https://Ifluencesa-api.render.com
 
 # Optional: Analytics
 NEXT_PUBLIC_GA_ID=G-XXXXXXXXXX
@@ -71,7 +71,7 @@ vercel login
 vercel --prod
 
 # 3. Configure custom domain (optional)
-vercel domains add windsurf.app
+vercel domains add Ifluencesa.app
 ```
 
 ### 3. Backend Deployment (Render)
@@ -81,7 +81,7 @@ vercel domains add windsurf.app
 # render.yaml
 services:
   - type: web
-    name: windsurf-api
+    name: Ifluencesa-api
     env: python
     buildCommand: "pip install -r requirements.txt"
     startCommand: "uvicorn app.main:app --host 0.0.0.0 --port $PORT"
@@ -107,7 +107,7 @@ OPENAI_API_KEY=sk-...
 
 # App Configuration
 ENVIRONMENT=production
-CORS_ORIGINS=https://windsurf.app,https://windsurf.vercel.app
+CORS_ORIGINS=https://Ifluencesa.app,https://Ifluencesa.vercel.app
 SECRET_KEY=your-secret-key-here
 
 # PDF Generation
@@ -146,10 +146,10 @@ CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
 #### Custom Domain Setup
 ```bash
 # Frontend (Vercel)
-windsurf.app → Vercel
+Ifluencesa.app → Vercel
 
 # Backend (Render)
-api.windsurf.app → Render
+api.Ifluencesa.app → Render
 
 # Database
 # Supabase provides: your-project.supabase.co
@@ -159,8 +159,8 @@ api.windsurf.app → Render
 ```
 Type    Name    Value                           TTL
 A       @       76.76.19.61 (Vercel)          300
-CNAME   api     windsurf-api.onrender.com      300
-CNAME   www     windsurf.vercel.app            300
+CNAME   api     Ifluencesa-api.onrender.com      300
+CNAME   www     Ifluencesa.vercel.app            300
 ```
 
 ## CI/CD Pipeline
@@ -263,8 +263,8 @@ from fastapi.middleware.cors import CORSMiddleware
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "https://windsurf.app",
-        "https://windsurf.vercel.app",
+        "https://Ifluencesa.app",
+        "https://Ifluencesa.vercel.app",
         "http://localhost:3000"  # Development only
     ],
     allow_credentials=True,

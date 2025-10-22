@@ -1,4 +1,4 @@
--- Windsurf MVP Database Schema for Supabase
+-- Ifluencesa MVP Database Schema for Supabase
 -- Run this in your Supabase SQL Editor
 
 -- Enable necessary extensions

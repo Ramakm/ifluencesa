@@ -148,7 +148,7 @@ export default function DashboardPage() {
               <div className="w-8 h-8 gradient-bg rounded-lg flex items-center justify-center">
                 <span className="text-white font-bold text-lg">W</span>
               </div>
-              <span className="text-xl font-bold gradient-text">Windsurf</span>
+              <span className="text-xl font-bold gradient-text">Ifluencesa</span>
             </div>
             <div className="hidden md:block text-muted-foreground">
               Welcome back, {user.user_metadata?.full_name || user.email}

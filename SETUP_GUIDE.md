@@ -1,6 +1,6 @@
-# Windsurf Setup Guide
+# Ifluencesa Setup Guide
 
-This guide will walk you through setting up Windsurf locally for development.
+This guide will walk you through setting up Ifluencesa locally for development.
 
 ## 📋 Prerequisites
 
@@ -19,7 +19,7 @@ Before you begin, ensure you have the following installed:
 2. Click "New Project"
 3. Choose your organization
 4. Enter project details:
-   - **Name**: `windsurf-dev` (or your preferred name)
+   - **Name**: `Ifluencesa-dev` (or your preferred name)
    - **Database Password**: Generate a strong password
    - **Region**: Choose closest to your location
 5. Click "Create new project"
@@ -189,7 +189,7 @@ You should see:
 ### 2. Test Frontend
 
 1. Visit: http://localhost:3000
-2. You should see the Windsurf landing page
+2. You should see the Ifluencesa landing page
 3. Click "Get Started" to test the signup flow
 
 ### 3. Test Full Flow

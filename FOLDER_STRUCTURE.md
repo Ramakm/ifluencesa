@@ -1,7 +1,7 @@
-# Windsurf MVP - Folder Structure
+# Ifluencesa MVP - Folder Structure
 
 ```
-windsurf/
+Ifluencesa/
 ├── frontend/                    # Next.js 14 App Router
 │   ├── app/
 │   │   ├── globals.css

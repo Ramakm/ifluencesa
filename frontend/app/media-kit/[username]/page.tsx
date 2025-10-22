@@ -123,7 +123,7 @@ export default function MediaKitPage() {
             <Button variant="ghost" size="sm" asChild>
               <Link href="/">
                 <ArrowLeft className="h-4 w-4 mr-2" />
-                Back to Windsurf
+                Back to Ifluencesa
               </Link>
             </Button>
           </div>
@@ -344,7 +344,7 @@ export default function MediaKitPage() {
           </div>
           <div className="mt-4">
             <Link href="/" className="text-primary hover:underline font-medium">
-              Powered by Windsurf
+              Powered by Ifluencesa
             </Link>
           </div>
         </div>

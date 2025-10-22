@@ -5,21 +5,22 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Windsurf - Influencer Media Kit Generator',
+  metadataBase: new URL(process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000'),
+  title: 'Ifluencesa - Influencer Media Kit Generator',
   description: 'Transform your social influence into professional media kits with engagement analytics and PDF generation.',
   keywords: ['influencer', 'media kit', 'engagement', 'analytics', 'social media'],
-  authors: [{ name: 'Windsurf Team' }],
+  authors: [{ name: 'Ifluencesa Team' }],
   openGraph: {
-    title: 'Windsurf - Influencer Media Kit Generator',
+    title: 'Ifluencesa - Influencer Media Kit Generator',
     description: 'Transform your social influence into professional media kits',
-    url: 'https://windsurf.app',
-    siteName: 'Windsurf',
+    url: 'https://Ifluencesa.app',
+    siteName: 'Ifluencesa',
     images: [
       {
         url: '/og-image.png',
         width: 1200,
         height: 630,
-        alt: 'Windsurf - Influencer Media Kit Generator',
+        alt: 'Ifluencesa - Influencer Media Kit Generator',
       },
     ],
     locale: 'en_US',
@@ -27,7 +28,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Windsurf - Influencer Media Kit Generator',
+    title: 'Ifluencesa - Influencer Media Kit Generator',
     description: 'Transform your social influence into professional media kits',
     images: ['/og-image.png'],
   },
